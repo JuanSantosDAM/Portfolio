@@ -1,0 +1,187 @@
+/* Definición de variables de color*/
+:root {
+    --color-principal: #6366f1; 
+    --color-secundario: #f43f5e; 
+    --color-fondo: #acc8e6;      
+    --color-texto: #1e1b4b;     
+    --blanco-sucio: #f3dbdb;     
+}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+
+.cabecera {
+    
+    background-color: var(--color-principal);
+    color: var(--blanco-sucio);
+    padding: 5%; 
+    text-align: center; /* Eje x*/
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Eje y*/
+}
+
+
+.fotoperfil {
+    border-radius: 50%;
+    border: solid var(--color-secundario); 
+    margin-bottom: 2%;
+    width: 30%;
+    height: 30%;
+}
+
+
+.enlaces {
+    margin-top: 3%;
+    width: 100%;
+}
+
+
+.enlaces a {
+    color: var(--blanco-sucio);
+    text-decoration: none;
+    margin: 1%;
+    padding: 1% 2%;
+    border: 1px solid var(--blanco-sucio);
+    display: inline-block; 
+}
+
+/* Cambio de color al pasar el ratón */
+.enlaces a:hover {
+    background-color: var(--color-secundario);
+    
+}
+
+/* Contenedor principal para que haya espaciado en los bordes de la página */
+main {
+    width: 90%;
+    margin: 5% auto; 
+}
+
+/* Cajas de las secciones */
+.seccion{
+    background: var(--blanco-sucio);
+    padding: 4%;
+    margin-bottom: 5%;
+    border-radius: 10px; 
+    
+}
+
+/* Títulos con la barra lateral */
+h2 {
+    color: var(--color-principal);
+    border-left: 10px solid var(--color-secundario);
+    padding-left: 3%;
+    margin-bottom: 3%;
+}
+
+/* Flexbox para las filas de tarjetas */
+.tarjetas_misma_columna {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 4%; 
+    justify-content: center;
+}
+
+
+.carta {
+    background: var(--blanco-sucio);
+    flex-wrap: wrap;
+    flex: 40%; 
+    padding: 3%;
+    border: 1px solid #ddd;
+    margin-bottom: 5%; 
+    gap: 4%; 
+}
+
+.carta h3 {
+    margin-bottom: 3%;
+}
+
+/* Tarjetas de proyectos */
+.proyectos {
+    background: var(--blanco-sucio);
+    flex: 45%;
+    padding: 3%;
+    text-align: center;
+    box-shadow: 0 4px 6px;
+    
+}
+
+
+/* Separación de las barras de habilidad */
+.seccion div div {
+    margin-bottom: 3%;
+}
+
+.barra {
+    background: #944646; 
+    height: 20px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Clases de las skills */
+.Java {
+    background: var(--color-secundario);
+    height: 100%;
+    border-radius: 10px;
+    width: 30%; 
+}
+
+.HTML {
+    background: var(--color-secundario);
+    height: 100%;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.Ingles {
+    background: var(--color-secundario);
+    height: 100%;
+    border-radius: 10px;
+    width: 60%;
+}
+
+#habilidades {
+    background: var(--blanco-sucio);
+    flex: 45%;
+    padding: 3%;
+    text-align: center;
+    box-shadow: 0 4px 6px;
+    margin-top: 3%;
+}
+
+#espaciado-habilidades {
+    margin-top: 3%;
+}
+
+.lista-habilidades{
+    display: inline-flex;
+    background-color: var(--color-secundario);
+    padding: 2%;
+    margin: 1%;
+    color: var(--blanco-sucio);
+    border-radius: 15px;
+    border: 1px dotted var(--color-principal);
+}
+
+
+
+/*Pie de página */
+footer {
+    text-align: center;
+    padding: 5%;
+    background: var(--color-principal);
+    color: var(--blanco-sucio)
+}
